@@ -32,7 +32,7 @@ export default function App() {
 
   return (
     <>
-      <StatusBar barStyle="light-content" backgroundColor="#7159c1" />
+      <StatusBar barStyle="light-content" backgroundColor="#7159" />
       <SafeAreaView style={styles.container}>
         <FlatList 
           style={styles.repositoryContainer} 
@@ -77,17 +77,21 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#7159c1",
+    backgroundColor: "#7159",
   },
-  repositoryContainer: {
+  repositoryContainer: {   
     marginBottom: 15,
     marginHorizontal: 15,
     backgroundColor: "#fff",
-    padding: 20,
+    // paddingBottom: 20,
+    paddingStart: 20,
+    paddingEnd: 10,
+    
   },
   repository: {
     fontSize: 32,
     fontWeight: "bold",
+    marginTop: 20,
   },
   techsContainer: {
     flexDirection: "row",
@@ -120,8 +124,8 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     marginRight: 10,
     color: "#fff",
-    backgroundColor: "#7159c1",
+    backgroundColor: "#7159",
     padding: 15,
-    marginBottom: 30,
+    marginBottom: 10,
   },
 });
